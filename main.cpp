@@ -6,6 +6,7 @@
 #include "CrossShape.h"
 #include "GridShape.h"
 #include "GameWindow.h"
+#include "Player.h"
 
 char checkWin(const std::vector<char>& vGameGrid) {
     // Check rows

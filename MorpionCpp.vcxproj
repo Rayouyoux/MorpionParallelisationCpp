@@ -136,6 +136,7 @@
     <ClCompile Include="GridShape.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircleShape.h" />
@@ -143,6 +144,7 @@
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="GridShape.h" />
+    <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
