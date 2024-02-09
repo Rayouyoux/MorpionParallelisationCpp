@@ -1,6 +1,10 @@
 #pragma once
 
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
 #include <iostream>
+#include <string>
 
 class Player
 {
@@ -11,14 +15,15 @@ public:
 	std::string		m_sUsername;
 	char			m_cSymbole;
 	int				m_iScore;
+	std::string		m_iID;
 
 	// Constructor
 	Player();
 
 	// Server Methods
-	void			askConnection();
-	void			sendMove();
-	void			sendUsername();
+	void			askConnection(const std::string& sServerIP, int iPort);
+	void			sendMove(const std::string& serverIP, int port, int x, int y);
+	void			sendPlayerData();
 
 	// Set Methods
 	void			setPlayer(int iNumber, char cSymbole);
@@ -31,6 +36,5 @@ public:
 	std::string		getUsername();
 	char			getSymbole();
 	int				getScore();
-
+	std::string		getID();
 };
-
